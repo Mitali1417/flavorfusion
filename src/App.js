@@ -20,12 +20,7 @@ const App = () => {
     <Router key={key}>
       <Routes>
         <Route
-          path="/"git init
-git add README.md
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/Mitali1417/Auth.git
-git push -u origin master
+          path="/"
           element={
             currentForm === "login" ? (
               <Login onFormSwitch={toggleForm} />
