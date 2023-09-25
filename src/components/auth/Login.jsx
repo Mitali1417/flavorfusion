@@ -111,7 +111,7 @@ const Login = (props) => {
           </button>
           <p className={`pt-[1.5rem]`}>
             Don't have an account,{" "}
-            <button className={`text-black/60 hover:text-black font-semibold`} onClick={() => props.onFormSwitch("signup")}>
+            <button className={`text-shade4 hover:text-shade4/50 font-semibold`} onClick={() => props.onFormSwitch("signup")}>
              Sign up
             </button>
           </p>

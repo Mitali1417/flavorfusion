@@ -52,32 +52,30 @@ const Signup = (props) => {
 
   return (
     <>
-      <div className={`flex flex-1 selection:bg-white selection:text-shade1 relative justify-center items-center flex-col h-screen`}
-     
-      >
-      <h1 className={`${styles.heading1}`}>Sign up</h1>
-        <div className="flex justify-center items-center absolute bottom-[11rem] left-[40em]">
-        <div className="bg-gradient-to-br  from-shade1 to-shade3   shadow-xl  z-0 h-[14rem] w-[14rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
-        <div className="bg-gradient-to-br blur-lg  from-shade1 to-white h-[10rem] w-[10rem] absolute rounded-full" />
-        </div> 
-
-        <div className="flex justify-center items-center absolute top-[13rem] right-[29rem]">
-        <div className="bg-gradient-to-bl  from-shade1 to-shade3  shadow-xl z-0 h-[7rem] w-[7rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
-        <div className="bg-gradient-to-bl blur-lg  from-shade1 to-white h-[4rem] w-[4rem] absolute rounded-full" />
+      <div  className={`flex flex-1 ${styles.paddingX} selection:bg-white selection:text-shade1 relative justify-center items-center flex-col h-screen`}>
+    
+      <div className="flex justify-center items-center absolute bottom-[11rem] left-[8rem] sm:left-[13rem] lg:left-[40em]">
+          <div className="bg-gradient-to-br  from-shade1 to-shade3  shadow-xl  z-0 h-[10rem] sm:h-[14rem] w-[10rem] sm:w-[14rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
+          <div className="bg-gradient-to-br blur-lg  from-shade1 to-shade4 h-[6rem] sm:h-[10rem] w-[6rem] sm:w-[10rem] absolute rounded-full" />
         </div>
 
-        <div className="flex justify-center items-center absolute top-[10rem] right-[12rem]">
-        <div className="bg-gradient-to-bl  from-shade1 to-shade3  shadow-xl z-0 h-[18rem] w-[18rem] absolute rounded-tl-full rounded-tr-[3rem] rounded-b-full  " />
-        <div className="bg-gradient-to-bl blur-lg  from-shade1 to-white h-[12rem] w-[12rem] absolute rounded-full" />
+        <div className="flex justify-center items-center absolute rotate-12  top-[10rem] right-[29rem]">
+          <div className="bg-gradient-to-bl  from-shade1 to-shade3  shadow-xl z-0 h-[7rem] w-[7rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
+          <div className="bg-gradient-to-bl blur-lg  from-shade1 to-shade4 h-[4rem] w-[4rem] absolute rounded-full" />
+        </div>
+
+        <div className="flex justify-center items-center absolute top-[10rem] right-[10rem] sm:right-[12rem]">
+          <div className="bg-gradient-to-bl  from-shade1 to-shade3  shadow-xl z-0 h-[14rem] sm:h-[18rem] w-[14rem] sm:w-[18rem] absolute rounded-tl-full rounded-tr-[3rem] rounded-b-full  " />
+          <div className="bg-gradient-to-bl blur-lg  from-shade1 to-shade4 h-[10rem] sm:h-[12rem] w-[10rem] sm:w-[12rem] absolute rounded-full" />
         </div>
 
       
         <form
           method="POST"
-          className={`p-[3rem] px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-sm ${styles.text} bg-shade3/60 shadow-2xl rounded-[2rem]`}
-        >
-          <div className={`flex justify-between items-center`}>
-            <label>Username</label>
+          className={`p-[3rem] px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-md ${styles.text} bg-shade3/40 shadow-2xl rounded-[2rem]`}
+         >
+          <div className={`flex justify-between items-center flex-col sm:flex-row`}>
+            <label  className={`mb-4 sm:mb-0`}>Username</label>
             <input
             className={`${styles.input}`}
               type="text"
@@ -88,8 +86,8 @@ const Signup = (props) => {
             />
           </div>
           <br />
-          <div className={`flex justify-between items-center`}>
-            <label>Email</label>
+          <div className={`flex justify-between items-center flex-col sm:flex-row`}>
+            <label  className={`mb-4 sm:mb-0`}>Email</label>
             <input
             className={`${styles.input}`}
               type="email"
@@ -100,8 +98,8 @@ const Signup = (props) => {
             />
           </div>
           <br />
-          <div  className={`flex justify-between items-center`}>
-            <label>Password</label>
+          <div  className={`flex justify-between items-center flex-col sm:flex-row`}>
+            <label  className={`mb-4 sm:mb-0`}>Password</label>
             <input
             className={`${styles.input}`}
               type="password"
@@ -117,7 +115,7 @@ const Signup = (props) => {
           </button>
           <p className={`pt-[1.5rem]`}>
             Already have an account,{" "}
-            <button className={`text-shade1 hover:text-shade1/50 font-semibold`} onClick={() => props.onFormSwitch("login")}>Log In</button>
+            <button className={`text-shade4 hover:text-shade4/50 font-semibold`} onClick={() => props.onFormSwitch("login")}>Log In</button>
           </p>
         </form>
       </div>
