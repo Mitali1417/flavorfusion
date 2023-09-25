@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import Dashboard from "./components/Dashboard.jsx";
+import Login from "./components/auth/Login";
+import Signup from "./components/auth/Signup";
+import Dashboard from "./pages/Dashboard.jsx";
+import { styles } from "./styles";
 
 const App = () => {
   const [currentForm, setCurrentForm] = useState("login");
@@ -17,6 +18,7 @@ const App = () => {
   };
 
   return (
+    <div className={`${styles.boxWidth}`}>
     <Router key={key}>
       <Routes>
         <Route
@@ -33,9 +35,8 @@ const App = () => {
           path="/dashboard"
           element={<Dashboard onLogout={resetAppState} />}
         />
-        {/* Pass the function as prop */}
       </Routes>
-    </Router>
+    </Router></div>
   );
 };
 
