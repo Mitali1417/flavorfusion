@@ -20,6 +20,10 @@ module.exports = {
       },
       fontFamily:{
         Roboto: ['Roboto Flex', 'sans-serif'],
+        Merienda: ['Merienda', 'cursive'],
+        Lato: ['Lato', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+        OpenSans: ['Open Sans', 'sans-serif'],
       },
       screens:{
         xs:'310px',
