@@ -61,9 +61,7 @@ const Dashboard = (props) => {
           <a className={`${styles.btn}`} href="/areaList">
             Checkout Area List
           </a>
-          <a className={`${styles.btn}`} href="/review">
-            Checkout Reviews
-          </a>
+        
         </div>
       )}
     </>

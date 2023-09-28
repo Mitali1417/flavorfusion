@@ -6,7 +6,6 @@ import Dashboard from "./pages/Dashboard.jsx";
 import { styles } from "./styles";
 import List from "./components/food/List";
 import RandomMeal from "./components/food/RandomMeal";
-import Review from "./components/food/Review";
 import CategoryList from "./components/food/Category/CategoryList";
 import CategorySearch from "./components/food/Category/CategorySearch";
 import IngredientList from "./components/food/Ingredient/IngredientList";
@@ -81,10 +80,7 @@ const App = () => {
           path="/areaList/areaSearch"
           element={<AreaSearch onLogout={resetAppState} />}
         />
-        <Route
-          path="/review"
-          element={<Review onLogout={resetAppState} />}
-        />
+        
       </Routes>
     </Router></div>
   );
