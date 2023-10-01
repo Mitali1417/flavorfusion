@@ -166,3 +166,28 @@ body{
 .hoverbg{
   box-shadow: 0px 1px 3px gray inset;
 }
+
+body::-webkit-scrollbar{
+  background-color: #2A3950;
+  /* background: transparent; */
+}
+body::-webkit-scrollbar-thumb {
+  background: #cccccc; 
+    border-radius:10px;
+}
+.scrollBar::-webkit-scrollbar{
+  background: transparent;
+}
+
+  .scrollBar::-webkit-scrollbar-thumb {
+  background: #cccccc; 
+    border-radius:10px;
+}
+
+
+.bg1{
+  background-image: url("./assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

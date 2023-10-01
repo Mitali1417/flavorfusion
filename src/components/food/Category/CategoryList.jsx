@@ -7,6 +7,7 @@ const CategoryList = () => {
   const [error, setError] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null); // To track the selected category
   const [loading, setLoading] = useState(true);
+  const [show, setShow] = useState(false);
 
   const url = "https://www.themealdb.com/api/json/v1/1/list.php?c=list";
 
@@ -28,7 +29,7 @@ const CategoryList = () => {
     fetchData();
   }, []);
 
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
 
   return (
     <>
@@ -37,19 +38,33 @@ const CategoryList = () => {
           <span className="loader"></span>
         </div>
       ) : (
-        <div className={`h-full min-h-screen flex flex-wrap w-full`}>
-          {data?.meals?.map((category, index) => (
-            <div key={index} className="m-5">
-              <button
-                onClick={() => setSelectedCategory(category.strCategory)}
-                className={`${styles.text} ${styles.btn}`}
-              >
-                {category.strCategory}
-              </button>
-            </div>
-          ))}
-          {/* Display meals of selected category */}
-          {selectedCategory && <CategorySearch category={selectedCategory} />}
+        <div className={`h-full min-h-screen flex flex-row w-full`}>
+          <div
+            className={`scrollBar max-h-screen basis-[20%] bg-[#272840] p-[2rem] overflow-y-scroll fixed left-0 `}
+         >
+            {data?.meals?.map((category, index) => (
+              <div key={index} className={`hover:bg-[#343655] rounded-[0.6rem] p-[0.6rem]`}>
+                <button
+                  onClick={() => {
+                    setSelectedCategory(category.strCategory);
+                    setShow(true); // Show the CategorySearch component
+                  }}
+                  className={`${styles.text} `}
+                >
+                  {category.strCategory}
+                </button>
+              </div>
+            ))}
+          </div>
+          {show ?
+          <div className={`basis-[70%] ml-[20%]`}>
+            {selectedCategory && <CategorySearch category={selectedCategory} />}
+          </div>
+          :
+          <div className={`${styles.heading3} ${styles.flexCenter} w-full`}>
+            Select the Category
+          </div>
+          }
         </div>
       )}
     </>

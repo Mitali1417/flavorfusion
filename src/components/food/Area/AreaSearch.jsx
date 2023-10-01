@@ -21,18 +21,38 @@ const AreaSearch = ({ area }) => {
     fetchData();
   }, [area]);
 
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
+
 
   return (
-    <div>
-      <h2>{area} Meals</h2>
-      <div className={`h-full min-h-screen text-white flex flex-wrap w-full`}>
-        {data?.meals?.map((item, index) => (
-          <div key={index} className="m-5">
-            <p className={`${styles.text} ${styles.btn}`}>
+    <div className={`${styles.flexCenter} flex-col`}>
+      <div className={`${styles.flexCenter} my-[2rem]`}>
+        <h2 className={`${styles.heading2}`}>{area} Meals</h2>
+      </div>
+      <div className={`flex justify-center items-start text-center h-full min-h-screen text-white flex-wrap w-full`}>
+     {data?.meals?.map((item, index) => (
+          <div key={index} className={`w-[28%] m-[1rem]`}>
+
+          <div
+              className={`relative overflow-hidden rounded-2xl hover:scale-105  hover:skew-x-2  transition duration-[900ms] ease-in-out `}
+            >
+              <div className={``}>
+                <p
+                  className={`${styles.text} px-[1.5rem] z-30 absolute  bottom-[1.5rem]`}
+                >
+                  {item.strMeal}
+                </p>
+                <div
+                  className={`absolute blur-2xl -bottom-[4.5rem] -left-[5rem] w-screen h-[10rem] bg-[#111720]`}
+                />
+              </div>
+              <img src={item.strMealThumb} className={``} alt="" />
+            </div>
+
+            {/* <p className={`${styles.text} ${styles.btn}`}>
               {item.strMeal}
             </p>
-            <img src={item.strMealThumb} alt="" />
+            <img src={item.strMealThumb} alt="" /> */}
           </div>
         ))}
       </div>

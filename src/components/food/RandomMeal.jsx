@@ -22,8 +22,7 @@ const RandomMeal = () => {
 
     fetchData();
   }, []);
-
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
 
   return (
     <>
