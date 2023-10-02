@@ -29,7 +29,14 @@ const CategoryList = () => {
     fetchData();
   }, []);
 
-  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
+  if (error)
+    return (
+      <div
+        className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}
+      >
+        Error: {error.message}
+      </div>
+    );
 
   return (
     <>
@@ -40,10 +47,13 @@ const CategoryList = () => {
       ) : (
         <div className={`h-full min-h-screen flex flex-row w-full`}>
           <div
-            className={`scrollBar max-h-screen basis-[20%] bg-[#272840] p-[2rem] overflow-y-scroll fixed left-0 `}
-         >
+            className={`scrollBar max-h-screen basis-[20%] bg-[#192230] p-[2rem] overflow-y-scroll fixed left-0 `}
+          >
             {data?.meals?.map((category, index) => (
-              <div key={index} className={`hover:bg-[#343655] rounded-[0.6rem] p-[0.6rem]`}>
+              <div
+                key={index}
+                className={`hover:bg-[#343655] rounded-[0.6rem] p-[0.6rem]`}
+              >
                 <button
                   onClick={() => {
                     setSelectedCategory(category.strCategory);
@@ -56,15 +66,18 @@ const CategoryList = () => {
               </div>
             ))}
           </div>
-          {show ?
-          <div className={`basis-[70%] ml-[20%]`}>
-            {selectedCategory && <CategorySearch category={selectedCategory} />}
-          </div>
-          :
-          <div className={`${styles.heading3} ${styles.flexCenter} w-full`}>
-            Select the Category
-          </div>
-          }
+          {show ? (
+            <div className={`basis-[70%] ml-[20%]`}>
+              {selectedCategory && (
+                <CategorySearch category={selectedCategory} />
+              )}
+              
+            </div>
+          ) : (
+            <div className={`${styles.heading3} ${styles.flexCenter} w-full`}>
+              Select the Category
+            </div>
+          )}
         </div>
       )}
     </>

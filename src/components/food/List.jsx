@@ -28,8 +28,14 @@ const List = () => {
     fetchData();
   }, []);
 
-  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
-
+  // if (error)
+  //   return (
+  //     <div
+  //       className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}
+  //     >
+  //       Error: {error.message}
+  //     </div>
+  //   );
 
   return (
     <>
@@ -42,28 +48,55 @@ const List = () => {
           className={`${styles.paddingY} ${styles.flexCenter} flex-col  w-full`}
         >
           {/* <Marquee autoFill="true" speed="180" className={`${styles.flexCenter}`}>
-             */}
-             <div className={` ${styles.paddingY} ${styles.flexCenter} text-center`}>
-              <h2 className={`${styles.heading2} font-Roboto  text-[3.6rem] `}>Banquet of Savory & <br /> <span className={`${styles.heading4} leading-[1]`}>Delicious Offerings</span>
-              </h2>
-             </div>
-             <div className={`${styles.flexCenter} flex-wrap`}>
-              {data?.categories?.filter((category) => category.idCategory < 6).map((category, index) => (
+           */}
+          <div
+            className={` ${styles.paddingY} ${styles.flexCenter} text-center`}
+          >
+            <h2 className={`${styles.heading2} font-Roboto  text-[3.6rem] `}>
+              Banquet of Savory & <br />{" "}
+              <span className={`${styles.heading4} leading-[1]`}>
+                Delicious Offerings
+              </span>
+            </h2>
+          </div>
+          <div className={`${styles.flexCenter} relative flex-wrap`}>
+            {data?.categories
+              ?.filter((category) => category.idCategory < 6)
+              .map((category, index) => (
                 <div
                   key={index}
-                  className={`flex hover:scale-105 hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start items-center overflow-hidden relative bg-shade1 hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] max-w-[30%] p-9 m-5`}
+                  className={`flex hover:scale-90  hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start items-center overflow-hidden relative z-[2] backdrop-blur-3xl  hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] sm:max-w-[50%] md:max-w-[30%] p-9 m-5`}
                 >
-              
-              <div className={`w-[40rem] h-[9rem] blur-3xl z-0 absolute -top-[5rem]  bg-[#2e2f4a] `} />
-                  <p className={`${styles.heading3} absolute`}>{category.strCategory}</p>
+                  <div
+                    className={`w-[40rem] h-[9rem] blur-3xl z-0 absolute -top-[5rem]  bg-[#2e2f4a] `}
+                  />
+                  <p className={`${styles.heading3} absolute`}>
+                    {category.strCategory}
+                  </p>
                   <img
                     src={category.strCategoryThumb}
                     className={`rounded-full h-[8rem] mt-[4rem] my-[2rem]`}
                     alt={`Image for ${category.strCategory}`}
                   />
-                  <p className={`${styles.text2 }`}>{category.strCategoryDescription.slice(0, 100)  + "..."}</p>
+                  <p className={`${styles.text2}`}>
+                    {category.strCategoryDescription.slice(0, 100) + "..."}
+                  </p>
                 </div>
-              ))}</div>
+              ))}
+              <div
+                className={` absolute top-[6rem] right-[6rem] z-[0] w-[22rem] h-[4rem] blur-3xl bg-shade4/90 rotate-[25deg]`}
+              />
+               <div
+                className={` absolute top-[15rem] right-[3rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
+              />
+              <div
+                className={` absolute top-[44rem] left-[16rem] z-[0] w-[18rem] h-[9rem] blur-3xl bg-shade4/60 rotate-[15deg]`}
+              />
+               <div
+                className={` absolute -botttom-[19rem] left-[26rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
+              />
+              
+          </div>
           {/* </Marquee> */}
         </div>
       )}

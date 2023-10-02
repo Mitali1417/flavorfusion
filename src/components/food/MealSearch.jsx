@@ -32,7 +32,7 @@ const MealSearch = () => {
     }
   };
 
-  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
+  // if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
 
   return (
     <>
@@ -41,7 +41,7 @@ const MealSearch = () => {
         className={`${styles.flexCenter} ${styles.paddingX} flex-col  ${styles.paddingY} relative w-full`}
       >
     
-        <div className={`${styles.flexCenter} w-full`}>
+        <div className={`${styles.flexCenter} flex-col md:flex-row  w-full`}>
           <select
             value={searchType}
             onChange={(e) => setSearchType(e.target.value)}
@@ -63,7 +63,7 @@ const MealSearch = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={`Enter meal ${searchType}`}
-            className={`bg-black py-[1rem] ${styles.text} px-[1rem] rounded-full w-full`}
+            className={`bg-black py-[1rem] my-[1rem] ${styles.text} px-[1rem] rounded-full w-full`}
           />
         </div>
         <div className={`my-[1rem]`}>

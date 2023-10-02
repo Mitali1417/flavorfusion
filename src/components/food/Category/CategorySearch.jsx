@@ -54,7 +54,10 @@ const CategorySearch = ({ category }) => {
                 />
               </div>
               <img src={item.strMealThumb} className={``} alt="" />
+
             </div>
+            
+
           </div>
         ))}
       </div>

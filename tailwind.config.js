@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'group-focus'],
@@ -27,6 +28,7 @@ module.exports = {
       },
       screens:{
         xs:'310px',
+        ss: '450px',
         sm:'640px',
         md:'1024px',
         lg:'1280px',
@@ -34,6 +36,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+]
 }
 

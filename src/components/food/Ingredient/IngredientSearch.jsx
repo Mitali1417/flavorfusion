@@ -30,15 +30,15 @@ const IngredientSearch = ({ ingredient }) => {
     );
 
   return (
-    <div className={`${styles.flexCenter} flex-col`}>
+    <div className={`${styles.flexCenter} flex-col px-[2rem] sm:mt-[15rem] md:mt-[0rem]`}>
       <div className={`${styles.flexCenter} my-[2rem]`}>
-        <h2 className={`${styles.heading2}`}>{ingredient} Meals</h2>
+        <h2 className={`${styles.heading2} text-center md:text-left`}>{ingredient} Meals</h2>
       </div>
       <div
-        className={`flex justify-center items-start  h-full min-h-screen text-white flex-wrap w-full`}
+        className={`flex justify-center items-center h-full min-h-fit text-white flex-wrap w-full`}
       >
         {data?.meals?.map((item, index) => (
-          <div key={index} className={`w-[28%] m-[1rem]`}>
+          <div key={index} className={`w-full ss:w-[40%] sm:w-[50%] md:w-[28%] m-[0.5rem]  md:m-[1rem]`}>
             <div className={`relative overflow-hidden rounded-2xl hover:scale-105  hover:skew-x-2  transition duration-[900ms] ease-in-out `}>
               <div className={``}>
                 <p className={`${styles.text} px-[1.5rem] z-30 absolute  bottom-[1.5rem]`}>

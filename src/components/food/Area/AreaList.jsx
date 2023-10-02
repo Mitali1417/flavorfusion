@@ -38,7 +38,7 @@ const AreaList = () => {
         <span className="loader"></span></div>
       ) : (
       <div className={`h-full min-h-screen flex flex-wrap w-full`}>
-      <div className={`scrollBar max-h-screen basis-[20%] bg-[#272840] p-[2rem] overflow-y-scroll fixed left-0 `}
+      <div className={`scrollBar max-h-screen basis-[20%] bg-[#192230] p-[2rem] overflow-y-scroll fixed left-0 `}
         >
         {data?.meals?.map((area, index) => (
           <div key={index} className={`hover:bg-[#343655] rounded-[0.6rem] p-[0.6rem]`}>

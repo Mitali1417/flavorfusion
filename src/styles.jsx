@@ -1,10 +1,10 @@
 export const styles = {
     boxWidth: 'border-box overflow-hidden w-[100%] max-w-[1980px]',
-    heading1: 'font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[8rem] ',
-    heading2: 'font-OpenSans font-extrabold text-white text-[3rem] leading-tight my-[0.5rem] ',
+    heading1: 'font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[5rem] ss:text-[5.6rem] md:text-[7rem] lg:text-[8rem] ',
+    heading2: 'font-OpenSans font-extrabold text-white text-[2.6rem] md:text-[3rem] leading-tight my-[0.5rem] ',
     // heading2: 'font-OpenSans font-extrabold bg-clip-text text-transparent  bg-gradient-to-tr from-shade1 to-shade4 text-[3rem] ',
     heading3: 'font-OpenSans font-bold text-[#cccccc] text-[1.5rem] ',
-    heading4: 'font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[5rem] ',
+    heading4: 'font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[3.4rem] md:text-[5rem] ',
     heading5: 'font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[1.4rem] ',
     text:'font-roboto text-[1rem] text-white',
     text2:'font-OpenSans text-[1rem] text-[#cccccc]',
@@ -17,4 +17,5 @@ export const styles = {
 
     paddingX: 'px-[2rem] md:px-[4rem] xl:px-[8rem]',
     paddingY:'py-[2rem]',
+    marginY:'my-[4rem]',
 }

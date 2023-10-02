@@ -22,26 +22,27 @@ const RandomMeal = () => {
 
     fetchData();
   }, []);
-  if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
+  // if (error) return <div className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}>Error: {error.message}</div>;
 
   return (
     <>
       <div className={`h-full w-full flex flex-row`}>
-        <div className={`bg-gradient-to-tr from-shade1 to-shade4 w-full rounded-3xl shadow-2xl ${styles.paddingX} ${styles.paddingY}  `}>
+        <div className={`bg-gradient-to-tr from-shade1 to-shade4 w-full text-center md:text-left rounded-3xl shadow-2xl ${styles.paddingX} ${styles.paddingY}  `}>
           {data?.meals?.map((meal, index) => (
-            <div key={index} className={`${styles.flexCenter} items-center`}>
-              <div className={`basis-[50%]`}>
+            <div key={index} className={`${styles.flexCenter} flex-col md:flex-row  items-center`}>
+              <div className={`md:basis-[50%]`}>
                 <h4 className={`${styles.heading3}`}>{meal.strCategory}</h4>
                 <h2 className={`${styles.heading2}`}>{meal.strMeal}</h2>
                 <p className={`${styles.text2}`}>Pouplar in {meal.strArea}</p>
                 <p className={`${styles.text2}`}>Key Ingredients: {meal.strIngredient4}</p>
                 {/* <p className={`${styles.text}`}>{meal.strInstructions}</p> */}
               </div>
-              <div  className={`basis-[40%] ml-4`}>
-                <img src={meal.strMealThumb} className={`rounded-full shadow-2xl `} alt="" />
+              <div  className={`md:basis-[40%] ss:w-[20rem] md:w-full py-[2rem] ml-4`}>
+                <img src={meal.strMealThumb} className={`rounded-full shadow-2xl`} alt="" />
               </div>
             </div>
           ))}
+          
         </div>
       </div>
     </>
