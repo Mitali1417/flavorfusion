@@ -36,11 +36,9 @@ const MealSearch = () => {
 
   return (
     <>
-    
       <div
         className={`${styles.flexCenter} ${styles.paddingX} flex-col  ${styles.paddingY} relative w-full`}
       >
-    
         <div className={`${styles.flexCenter} flex-col md:flex-row  w-full`}>
           <select
             value={searchType}
@@ -69,7 +67,6 @@ const MealSearch = () => {
         <div className={`my-[1rem]`}>
           <button
             className={`${styles.btn2} px-[1rem] py-[0.6rem]`}
-
             onClick={handleSearch}
           >
             Search
@@ -87,16 +84,19 @@ const MealSearch = () => {
             {data.map((meal) => (
               <div
                 key={meal.idMeal}
-                className={`${styles.flexCenter} ${styles.paddingX} ${styles.paddingY} text-center flex-col m-2 w-[30%]`}
+                className={`${styles.flexCenter} ${styles.paddingX} ${styles.paddingY} text-center flex-col m-2 w-[50%] sm:w-[30%]`}
               >
                 <div className={` ${styles.flexCenter} relative `}>
-                <div className={`hover:bg-black rounded-full transition duration-500 ease-in-out`}>
-                  <img
-                    src={meal.strMealThumb}
-                    className={`shadow-2xl hover:opacity-[0.6] rounded-full transition duration-500 ease-in-out`}
-                    alt={meal.strMeal}
-                  /></div>
-                  <div className="flex justify-center items-center rotate-90 absolute top-[3rem] right-[1rem]">
+                  <div
+                    className={`hover:bg-black rounded-full transition duration-500 ease-in-out`}
+                  >
+                    <img
+                      src={meal.strMealThumb}
+                      className={`shadow-2xl opacity-[0.6] hover:opacity-[1] rounded-full transition duration-500 ease-in-out`}
+                      alt={meal.strMeal}
+                    />
+                  </div>
+                  {/* <div className="flex justify-center items-center rotate-90 absolute top-[3rem] right-[1rem]">
                     <div className="bg-gradient-to-br  from-shade1 to-shade3 z-0 h-[3rem] w-[3rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
                     <div className="bg-gradient-to-br blur-lg  from-shade1 to-shade4 h-[1rem] w-[1rem] absolute rounded-full" />
                   </div>
@@ -104,9 +104,9 @@ const MealSearch = () => {
                   <div className="flex justify-center items-center absolute bottom-[3rem] left-[1rem]">
                     <div className="bg-gradient-to-br  from-shade1 to-shade3 z-0 h-[5rem] w-[5rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
                     <div className="bg-gradient-to-br blur-lg  from-shade1 to-shade4 h-[3rem] w-[3rem] absolute rounded-full" />
-                  </div>
+                  </div> */}
                 </div>
-                <div className={``}>
+                <div className={`mt-[1rem]`}>
                   <h2 className={`${styles.heading3} text-[1.4rem]`}>
                     {meal.strMeal}
                   </h2>
@@ -114,7 +114,9 @@ const MealSearch = () => {
                     {meal.strCategory}
                   </p>
                   <p className={`${styles.text}`}>{meal.strArea}</p>
-                  <p className={`${styles.text2} text-[0.8rem]`}>{meal.strTags}</p>{" "}
+                  <p className={`${styles.text2} text-[0.8rem]`}>
+                    {meal.strTags}
+                  </p>{" "}
                 </div>
               </div>
             ))}

@@ -191,3 +191,9 @@ body::-webkit-scrollbar-thumb {
   background-attachment: fixed;
   background-size: cover;
 }
+.contactbg{
+  background-image: url("./assets/contactbg3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

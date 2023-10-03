@@ -28,15 +28,6 @@ const List = () => {
     fetchData();
   }, []);
 
-  // if (error)
-  //   return (
-  //     <div
-  //       className={`${styles.flexCenter} ${styles.heading2} overflow-hidden min-h-screen text-white`}
-  //     >
-  //       Error: {error.message}
-  //     </div>
-  //   );
-
   return (
     <>
       {loading ? (
@@ -45,7 +36,7 @@ const List = () => {
         </div>
       ) : (
         <div
-          className={`${styles.paddingY} ${styles.flexCenter} flex-col  w-full`}
+          className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} flex-col  w-full`}
         >
           {/* <Marquee autoFill="true" speed="180" className={`${styles.flexCenter}`}>
            */}
@@ -65,7 +56,7 @@ const List = () => {
               .map((category, index) => (
                 <div
                   key={index}
-                  className={`flex hover:scale-90  hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start items-center overflow-hidden relative z-[2] backdrop-blur-3xl  hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] sm:max-w-[50%] md:max-w-[30%] p-9 m-5`}
+                  className={`flex hover:scale-90  hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start items-center overflow-hidden relative z-[2] backdrop-blur-3xl  hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] sm:max-w-[40%] md:max-w-[30%] p-9 m-5`}
                 >
                   <div
                     className={`w-[40rem] h-[9rem] blur-3xl z-0 absolute -top-[5rem]  bg-[#2e2f4a] `}
@@ -83,19 +74,24 @@ const List = () => {
                   </p>
                 </div>
               ))}
-              <div
-                className={` absolute top-[6rem] right-[6rem] z-[0] w-[22rem] h-[4rem] blur-3xl bg-shade4/90 rotate-[25deg]`}
-              />
-               <div
-                className={` absolute top-[15rem] right-[3rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
-              />
-              <div
-                className={` absolute top-[44rem] left-[16rem] z-[0] w-[18rem] h-[9rem] blur-3xl bg-shade4/60 rotate-[15deg]`}
-              />
-               <div
-                className={` absolute -botttom-[19rem] left-[26rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
-              />
-              
+            <div
+              className={` absolute top-[6rem] right-[6rem] z-[0] w-[22rem] h-[4rem] blur-3xl bg-shade4/90 rotate-[25deg]`}
+            />
+            <div
+              className={` absolute top-[15rem] right-[3rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
+            />
+            <div
+              className={` absolute top-[44rem] left-[16rem] z-[0] w-[18rem] h-[9rem] blur-3xl bg-shade4/60 rotate-[15deg]`}
+            />
+            <div
+              className={` absolute -botttom-[19rem] left-[26rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
+            />
+            <div
+              className={` absolute bottom-[5rem] left-[17rem] z-[0] w-[12rem] h-[10rem] blur-3xl bg-shade4/20 rotate-[125deg]`}
+            />
+            <div
+              className={` absolute bottom-[35rem] right-[14rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
+            />
           </div>
           {/* </Marquee> */}
         </div>
