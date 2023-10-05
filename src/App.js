@@ -28,61 +28,58 @@ const App = () => {
 
   return (
     <div className={`${styles.boxWidth}`}>
-    <Router key={key}>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            currentForm === "login" ? (
-              <Login onFormSwitch={toggleForm} />
-            ) : (
-              <Signup onFormSwitch={toggleForm} />
-            )
-          }
-        />
-        <Route
-          path="/dashboard"
-          element={<Dashboard onLogout={resetAppState} />}
-        />
-        <Route
-          path="/mealSearch"
-          element={<MealSearch onLogout={resetAppState} />}
-        />
-        <Route
-          path="/list"
-          element={<List onLogout={resetAppState} />}
-        />
-        <Route
-          path="/randomMeal"
-          element={<RandomMeal onLogout={resetAppState} />}
-        />
-        <Route
-          path="/categoryList"
-          element={<CategoryList onLogout={resetAppState} />}
-        />
-        <Route
-          path="/categoryList/categorySearch"
-          element={<CategorySearch onLogout={resetAppState} />}
-        />
-        <Route
-          path="/ingredientList"
-          element={<IngredientList onLogout={resetAppState} />}
-        />
-        <Route
-          path="/ingredientList/ingredientSearch"
-          element={<IngredientSearch onLogout={resetAppState} />}
-        />
-        <Route
-          path="/areaList"
-          element={<AreaList onLogout={resetAppState} />}
-        />
-        <Route
-          path="/areaList/areaSearch"
-          element={<AreaSearch onLogout={resetAppState} />}
-        />
-        
-      </Routes>
-    </Router></div>
+      <Router key={key}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              currentForm === "login" ? (
+                <Login onFormSwitch={toggleForm} />
+              ) : (
+                <Signup onFormSwitch={toggleForm} />
+              )
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={<Dashboard onLogout={resetAppState} />}
+          />
+          <Route
+            path="/mealSearch"
+            element={<MealSearch onLogout={resetAppState} />}
+          />
+          <Route path="/list" element={<List onLogout={resetAppState} />} />
+          <Route
+            path="/randomMeal"
+            element={<RandomMeal onLogout={resetAppState} />}
+          />
+          <Route
+            path="/categoryList"
+            element={<CategoryList onLogout={resetAppState} />}
+          />
+          <Route
+            path="/categoryList/categorySearch"
+            element={<CategorySearch onLogout={resetAppState} />}
+          />
+          <Route
+            path="/ingredientList"
+            element={<IngredientList onLogout={resetAppState} />}
+          />
+          <Route
+            path="/ingredientList/ingredientSearch"
+            element={<IngredientSearch onLogout={resetAppState} />}
+          />
+          <Route
+            path="/areaList"
+            element={<AreaList onLogout={resetAppState} />}
+          />
+          <Route
+            path="/areaList/areaSearch"
+            element={<AreaSearch onLogout={resetAppState} />}
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

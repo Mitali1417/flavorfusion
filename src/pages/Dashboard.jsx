@@ -46,7 +46,7 @@ const Dashboard = (props) => {
             <Navbar onLogout={handleLogout} />
 
             <div
-              className={`flex flex-col md:flex-row justify-center  mb-[17rem] ss:mb-[20rem] sm:mb-[26rem] md:mb-[10rem] my-[10rem] items-center w-full`}
+              className={`flex flex-col md:flex-row justify-center  mb-[17rem] ss:mb-[20rem] sm:mb-[26rem] md:mb-[10rem] mt-[12rem] md:mt-[14rem] items-center w-full`}
             >
               <div
                 className={`w-full ${styles.flexCenter} top-[18rem] sm:top-[12rem] md:top-0 md:left-[1rem] lg:left-[5rem] relative`}
@@ -57,14 +57,14 @@ const Dashboard = (props) => {
                   alt="hero"
                 />
                 <div
-                  className={`absolute sm:-top-[1.5rem] left-[2rem] sm:left-[9rem] md:left-[5rem] z-[3] w-[6rem] sm:w-[18rem] h-[4rem] sm:h-[9rem] blur-3xl bg-[#556173]`}
+                  className={`absolute sm:-top-[1.5rem] left-[5rem] sm:left-[9rem] md:left-[5rem] z-[3] w-[16rem] sm:w-[18rem] h-[4rem] sm:h-[9rem] blur-3xl bg-[#556173]`}
                 />
                 <div
-                  className={`absolute sm:-top-[0.5rem] right-[2rem] sm:right-[9rem] md:left-[16rem] z-[0] w-[6rem] sm:w-[16rem] h-[4rem] sm:h-[9rem] blur-3xl bg-shade4`}
+                  className={`absolute sm:-top-[0.5rem] right-[5rem] sm:right-[9rem] md:left-[16rem] z-[0] w-[10rem] sm:w-[16rem] h-[4rem] sm:h-[9rem] blur-3xl bg-shade4`}
                 />
               </div>
               <div
-                className={`flex justify-center items-center flex-wrap leading-[0.9] w-full`}
+                className={`${styles.paddingX} flex justify-center items-center flex-wrap leading-[0.9] w-full`}
               >
                 <span
                   className={`${styles.heading1} drop-shadow-lg text-white`}
@@ -77,18 +77,21 @@ const Dashboard = (props) => {
               </div>
             </div>
 
-          
-
-            
             <div className={`w-full  ${styles.paddingX}`}>
               <div
-                className={`${styles.marginY}  bg1 w-full shadow-2xl h-[40vh] md:h-[60vh] relative overflow-hidden rounded-[4rem] md:rounded-[6rem] rounded-tr-[0] md:rounded-tr-[0]`}
+                className={`${styles.marginY}  bg1 w-full shadow-2xl h-[44vh] md:h-[60vh] relative overflow-hidden rounded-[4rem] md:rounded-[6rem] rounded-tr-[0] md:rounded-tr-[0]`}
               >
-                <h1
-                  className={`${styles.heading2} sm:w-[75%] absolute bottom-[1rem] md:bottom-[5rem] z-[5] px-[3rem] sm:px-[5rem]`}
+                <div
+                  className={`absolute md:w-[75%]  bottom-[2rem] md:bottom-[7rem] z-[5] px-[3rem] sm:px-[5rem]`}
                 >
-                  Explore This Banquet of Tempting Meals
-                </h1>
+                  <h1 className={`${styles.heading22} `}>
+                    Explore This Banquet of Tempting Meals
+                  </h1>
+                  <p className={`${styles.text2}`}>
+                    Savor the magic on every plate, where crispy meets
+                    excitement!
+                  </p>
+                </div>
                 <div
                   className={`absolute blur-3xl -bottom-[5.5rem] -left-[5rem] w-screen h-[20rem] bg-[#111720]/90`}
                 />
@@ -98,7 +101,6 @@ const Dashboard = (props) => {
 
             <MealSearch />
             <RandomMeal />
-            
 
             <Contact />
             <div className={`w-full ${styles.paddingX}`}>

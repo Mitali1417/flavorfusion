@@ -76,12 +76,14 @@ const Login = (props) => {
 
         <form
           method="POST"
-          className={`p-[3rem] px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-md ${styles.text} bg-shade3/40 shadow-2xl rounded-[2rem]`}
+          className={`p-[3rem] sm:px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-3xl  ${styles.text} shadow-2xl rounded-[2rem]`}
         >
-          <div className={`flex justify-between items-center flex-col sm:flex-row `}>
+          <div
+            className={`flex justify-between items flex-col sm:flex-row w-full `}
+          >
             <label className={`mb-4 sm:mb-0`}>Email</label>
             <input
-              className={`${styles.input}`}
+              className={`${styles.input} w-full sm:w-[13rem] `}
               type="email"
               placeholder="youremail@gmail.com"
               name="email"
@@ -90,10 +92,12 @@ const Login = (props) => {
             />
           </div>
           <br />
-          <div className={`flex justify-between items-center flex-col sm:flex-row `}>
-            <label  className={`mb-4 sm:mb-0`}>Password</label>
+          <div
+            className={`flex justify-between items-center flex-col sm:flex-row w-full`}
+          >
+            <label className={`mb-4 sm:mb-0`}>Password</label>
             <input
-              className={`${styles.input}`}
+              className={`${styles.input} w-full sm:w-[13rem]`}
               type="password"
               placeholder="********"
               name="password"
@@ -111,8 +115,11 @@ const Login = (props) => {
           </button>
           <p className={`pt-[1.5rem]`}>
             Don't have an account,{" "}
-            <button className={`text-shade4 hover:text-shade4/50 font-semibold`} onClick={() => props.onFormSwitch("signup")}>
-             Sign up
+            <button
+              className={`text-shade4 hover:text-shade4/50 font-semibold`}
+              onClick={() => props.onFormSwitch("signup")}
+            >
+              Sign up
             </button>
           </p>
         </form>

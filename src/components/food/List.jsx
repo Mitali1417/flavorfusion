@@ -43,9 +43,9 @@ const List = () => {
           <div
             className={` ${styles.paddingY} ${styles.flexCenter} text-center`}
           >
-            <h2 className={`${styles.heading2} font-Roboto  text-[3.6rem] `}>
-              Banquet of Savory & <br />{" "}
-              <span className={`${styles.heading4} leading-[1]`}>
+            <h2 className={`${styles.heading2} font-Roboto`}>
+              Banquet of Savory & <br />
+              <span className={`${styles.heading4} leading-[0.94]`}>
                 Delicious Offerings
               </span>
             </h2>

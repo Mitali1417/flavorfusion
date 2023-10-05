@@ -87,7 +87,7 @@ const CategoryList = () => {
                 className={`${styles.flexCenter} flex-row px-4 py-[1rem] text-sm w-full font-medium text-gray-700 ${styles.btn2} rounded-lg shadow-sm`}
                 type="button"
               >
-                Select Ingredient
+                Select Category
                 <svg
                   className={`w-2.5 h-2.5 ml-2.5 ${
                     display ? "transform rotate-180" : ""

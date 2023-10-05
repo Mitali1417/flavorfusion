@@ -20,7 +20,7 @@ const Navbar = (props) => {
       <nav
         className={`${styles.flexCenter} justify-between ${styles.paddingX} max-w-[1980px] mx-auto fixed z-10 top-[0.6rem] left-[2rem] right-[2rem] py-[1.4rem] rounded-full bg-black/50 backdrop-blur-lg shadow-md   shadow-[#666666] `}
       >
-        <div className={`flex flex-wrap z-[50] leading-[0.9] w-full`}>
+        <div className={`flex flex-wrap leading-[0.9] w-full`}>
           <span
             className={`${styles.heading5} text-[1.6rem] drop-shadow-lg text-white`}
           >
@@ -63,12 +63,15 @@ const Navbar = (props) => {
           <img className={`w-[2rem]`} src={toggle ? close : menu} alt="" />
         </div>
 
+        {/* -----------------------------Mobile Navbar---------------------------------------- */}
         {toggle && (
           <div
-            className={`bg-[#1b2533] md:hidden  ${styles.flexCenter} justify-start items-start w-screen min-h-screen fixed -top-[0.6rem] -left-[4rem] z-[40]`}
+            className={`bg-[#1b2533] md:hidden  ${styles.flexCenter} justify-start items-start w-screen min-h-screen fixed -top-[0.6rem] -left-[2rem] z-[40]`}
           >
-            <div className={``}>
-              <div className={`${styles.flexCenter} flex-col`}>
+            <div className={`relative  `}>
+              <div
+                className={`${styles.flexCenter} absolute z-[50] -left-[3rem] -top-[9rem] flex-col`}
+              >
                 <div className="flex flex-col ">
                   <div
                     className={`${styles.text} hover:scale-105 hover:bg-shade1 transition duration-500 ease-in-out px-[1rem] py-[0.6rem] rounded-[0.5rem]  my-[1rem] ${styles.flexCenter}`}
@@ -95,13 +98,25 @@ const Navbar = (props) => {
                   </div>
 
                   <button
-                    className={`${styles.btn2} my-[1rem]`}
+                    className={`${styles.btn} my-[1rem]`}
                     onClick={handleLogout}
                   >
                     Log out
                   </button>
                 </div>
               </div>
+              <div
+                className={` absolute -top-[25rem] -left-[35rem] z-[0] w-[22rem] h-[24rem] blur-3xl bg-shade4/30 rotate-[25deg]`}
+              />
+              <div
+                className={` absolute top-[15rem] -left-[14rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173]/30 rotate-[25deg]`}
+              />
+              <div
+                className={` absolute -top-[13rem] left-[9rem] z-[0] w-[22rem] h-[22rem] blur-3xl bg-shade4/30 rotate-[15deg]`}
+              />
+              <div
+                className={` absolute -top-[13rem] -right-[22rem] z-[1] w-[12rem] h-[19rem] blur-3xl bg-[#556173]/60 rotate-[25deg]`}
+              />
             </div>
           </div>
         )}

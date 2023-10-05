@@ -45,7 +45,7 @@ const IngredientSearch = ({ ingredient }) => {
             className={`w-full ss:w-[70%] sm:w-[40%] md:w-[30%] m-[0.5rem]  md:m-[1rem]`}
           >
             <div
-              className={`relative overflow-hidden rounded-2xl hover:scale-105  hover:skew-x-2  transition duration-[900ms] ease-in-out `}
+              className={`relative overflow-hidden rounded-2xl hover:scale-90   hover:skew-x-2  transition duration-[900ms] ease-in-out `}
             >
               <div className={``}>
                 <p

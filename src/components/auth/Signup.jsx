@@ -52,9 +52,10 @@ const Signup = (props) => {
 
   return (
     <>
-      <div  className={`flex flex-1 ${styles.paddingX} selection:bg-white selection:text-shade1 relative justify-center items-center flex-col h-screen`}>
-    
-      <div className="flex justify-center items-center absolute bottom-[11rem] left-[8rem] sm:left-[13rem] lg:left-[40em]">
+      <div
+        className={`flex flex-1 ${styles.paddingX} selection:bg-white selection:text-shade1 relative justify-center items-center flex-col h-screen`}
+      >
+        <div className="flex justify-center items-center absolute bottom-[11rem] left-[8rem] sm:left-[13rem] lg:left-[40em]">
           <div className="bg-gradient-to-br  from-shade1 to-shade3  shadow-xl  z-0 h-[10rem] sm:h-[14rem] w-[10rem] sm:w-[14rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
           <div className="bg-gradient-to-br blur-lg  from-shade1 to-shade4 h-[6rem] sm:h-[10rem] w-[6rem] sm:w-[10rem] absolute rounded-full" />
         </div>
@@ -69,15 +70,16 @@ const Signup = (props) => {
           <div className="bg-gradient-to-bl blur-lg  from-shade1 to-shade4 h-[10rem] sm:h-[12rem] w-[10rem] sm:w-[12rem] absolute rounded-full" />
         </div>
 
-      
         <form
           method="POST"
-          className={`p-[3rem] px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-md ${styles.text} bg-shade3/40 shadow-2xl rounded-[2rem]`}
-         >
-          <div className={`flex justify-between items-center flex-col sm:flex-row`}>
-            <label  className={`mb-4 sm:mb-0`}>Username</label>
+          className={`p-[3rem] sm:px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-md ${styles.text} shadow-2xl rounded-[2rem]`}
+        >
+          <div
+            className={`flex justify-between items-center flex-col sm:flex-row`}
+          >
+            <label className={`mb-4 sm:mb-0`}>Username</label>
             <input
-            className={`${styles.input}`}
+              className={`${styles.input}  w-full sm:w-[13rem] `}
               type="text"
               placeholder="username"
               name="username"
@@ -86,10 +88,12 @@ const Signup = (props) => {
             />
           </div>
           <br />
-          <div className={`flex justify-between items-center flex-col sm:flex-row`}>
-            <label  className={`mb-4 sm:mb-0`}>Email</label>
+          <div
+            className={`flex justify-between items-center flex-col sm:flex-row`}
+          >
+            <label className={`mb-4 sm:mb-0`}>Email</label>
             <input
-            className={`${styles.input}`}
+              className={`${styles.input}  w-full sm:w-[13rem] `}
               type="email"
               placeholder="youremail@gmail.com"
               name="email"
@@ -98,10 +102,12 @@ const Signup = (props) => {
             />
           </div>
           <br />
-          <div  className={`flex justify-between items-center flex-col sm:flex-row`}>
-            <label  className={`mb-4 sm:mb-0`}>Password</label>
+          <div
+            className={`flex justify-between items-center flex-col sm:flex-row`}
+          >
+            <label className={`mb-4 sm:mb-0`}>Password</label>
             <input
-            className={`${styles.input}`}
+              className={`${styles.input}  w-full sm:w-[13rem] `}
               type="password"
               placeholder="********"
               name="password"
@@ -110,12 +116,21 @@ const Signup = (props) => {
             />
           </div>
           <br />
-          <button className={`${styles.btn}`} type="submit" onClick={handleSubmit}>
+          <button
+            className={`${styles.btn}`}
+            type="submit"
+            onClick={handleSubmit}
+          >
             Sign Up
           </button>
           <p className={`pt-[1.5rem]`}>
             Already have an account,{" "}
-            <button className={`text-shade4 hover:text-shade4/50 font-semibold`} onClick={() => props.onFormSwitch("login")}>Log In</button>
+            <button
+              className={`text-shade4 hover:text-shade4/50 font-semibold`}
+              onClick={() => props.onFormSwitch("login")}
+            >
+              Log In
+            </button>
           </p>
         </form>
       </div>

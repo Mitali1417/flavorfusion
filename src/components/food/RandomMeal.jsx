@@ -26,7 +26,9 @@ const RandomMeal = () => {
 
   return (
     <>
-      <div className={`${styles.paddingX} ${styles.paddingY} h-full w-full flex flex-row`}>
+      <div
+        className={`${styles.paddingX} ${styles.paddingY} h-full w-full flex flex-row`}
+      >
         <div
           className={`bg-gradient-to-tr from-shade1 to-shade4 w-full text-center md:text-left rounded-3xl shadow-2xl ${styles.paddingX} ${styles.paddingY}  `}
         >
@@ -37,7 +39,7 @@ const RandomMeal = () => {
             >
               <div className={`md:basis-[50%]`}>
                 <h4 className={`${styles.heading3}`}>{meal.strCategory}</h4>
-                <h2 className={`${styles.heading2}`}>{meal.strMeal}</h2>
+                <h2 className={`${styles.heading22}`}>{meal.strMeal}</h2>
                 <p className={`${styles.text2}`}>Pouplar in {meal.strArea}</p>
                 <p className={`${styles.text2}`}>
                   Key Ingredients: {meal.strIngredient4}

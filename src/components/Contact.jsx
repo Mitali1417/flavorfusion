@@ -57,9 +57,7 @@ const Contact = () => {
       <div
         className={`relative w-full z-[2] ${styles.flexCenter} -bottom-[6rem]`}
       >
-        <h2
-          className={`absolute ${styles.heading2} drop-shadow-2xl`}
-        >
+        <h2 className={`absolute ${styles.heading2} drop-shadow-2xl`}>
           Get in Touch
         </h2>
       </div>
@@ -73,7 +71,9 @@ const Contact = () => {
             className={`w-full sm:w-[70%] md:w-[50%] ${styles.paddingX}  ${styles.paddingY} rounded-[1.4rem] backdrop-blur-3xl shadow-2xl`}
           >
             <form action="POST">
-              <div className={`${styles.flexCenter} flex-col ss:flex-row  w-full`}>
+              <div
+                className={`${styles.flexCenter} flex-col ss:flex-row  w-full`}
+              >
                 <div
                   className={`flex justify-center flex-col w-full mr-[0.5rem]`}
                 >
@@ -132,13 +132,14 @@ const Contact = () => {
                 />
               </div>
               <div className={`${styles.flexCenter} mt-[1.5rem]`}>
-              <button
-                className={`${styles.btn }`}
-                type="submit"
-                onClick={handleSubmit}
-              >
-                Sign Up
-              </button></div>
+                <button
+                  className={`${styles.btn}`}
+                  type="submit"
+                  onClick={handleSubmit}
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
