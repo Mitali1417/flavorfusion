@@ -36,7 +36,7 @@ const MealSearch = () => {
 
   return (
     <>
-      <div
+      <div  data-aos="fade-in"
         className={`${styles.flexCenter} ${styles.paddingX} flex-col  ${styles.paddingY} relative w-full`}
       >
         <div className={`${styles.flexCenter} flex-col md:flex-row  w-full`}>
@@ -96,15 +96,7 @@ const MealSearch = () => {
                       alt={meal.strMeal}
                     />
                   </div>
-                  {/* <div className="flex justify-center items-center rotate-90 absolute top-[3rem] right-[1rem]">
-                    <div className="bg-gradient-to-br  from-shade1 to-shade3 z-0 h-[3rem] w-[3rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
-                    <div className="bg-gradient-to-br blur-lg  from-shade1 to-shade4 h-[1rem] w-[1rem] absolute rounded-full" />
-                  </div>
-
-                  <div className="flex justify-center items-center absolute bottom-[3rem] left-[1rem]">
-                    <div className="bg-gradient-to-br  from-shade1 to-shade3 z-0 h-[5rem] w-[5rem] absolute rounded-tr-full rounded-tl-[3rem] rounded-b-full  " />
-                    <div className="bg-gradient-to-br blur-lg  from-shade1 to-shade4 h-[3rem] w-[3rem] absolute rounded-full" />
-                  </div> */}
+                  
                 </div>
                 <div className={`mt-[1rem]`}>
                   <h2 className={`${styles.heading3} text-[1.4rem]`}>

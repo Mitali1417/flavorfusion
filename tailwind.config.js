@@ -12,7 +12,7 @@ module.exports = {
       colors:{
         shade1: '#41436A',
         shade2: '#984063',
-        shade3: '#f64668',
+        shade3: '#ac3149',
         shade4: '#fe9677',
         // shade1: '#9a9cea',
         // shade2: '#a2b9ee',

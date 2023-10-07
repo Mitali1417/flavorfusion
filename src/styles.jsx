@@ -1,14 +1,14 @@
 export const styles = {
-  boxWidth: "border-box overflow-hidden w-[100%] max-w-[1980px]",
+  boxWidth: "border-box overflow-hidden w-[100%] max-w-[1580px]",
   heading1:
-    "font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[5rem] ss:text-[5.6rem] md:text-[7rem] lg:text-[8rem] ",
+    "font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 via-shade3 to-shade4 text-[5rem] ss:text-[5.6rem] md:text-[7rem] lg:text-[8rem] ",
   heading2:
     "font-OpenSans font-extrabold text-white text-[2.6rem] md:text-[3rem] md:leading-tight my-[0.5rem] ",
   heading22:
     "font-OpenSans font-extrabold text-white text-[2rem] ss:text-[2.4rem] md:text-[3rem] leading-tight my-[0.5rem] ",
   heading3: "font-OpenSans font-bold text-[#cccccc] text-[1.5rem] ",
   heading4:
-    "font-Montserrat font-extrabold bg-clip-text text-transparent md:leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[3rem] ss:text-[3.6rem] md:text-[5rem] ",
+    "font-Montserrat font-extrabold bg-clip-text text-transparent md:leading-tighter bg-gradient-to-tr from-shade2 via-shade3   to-shade4 text-[3rem] ss:text-[3.6rem] md:text-[5rem] ",
   heading5:
     "font-Montserrat font-extrabold bg-clip-text text-transparent leading-tighter bg-gradient-to-tr from-shade2 to-shade4 text-[1.4rem] ",
   text: "font-roboto text-[1rem] text-white",

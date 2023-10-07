@@ -18,7 +18,10 @@ const Navbar = (props) => {
   return (
     <div>
       <nav
-        className={`${styles.flexCenter} justify-between ${styles.paddingX} max-w-[1980px] mx-auto fixed z-10 top-[0.6rem] left-[2rem] right-[2rem] py-[1.4rem] rounded-full bg-black/50 backdrop-blur-lg shadow-md   shadow-[#666666] `}
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className={`${styles.flexCenter} justify-between ${styles.paddingX} max-w-[1580px] mx-auto fixed z-10 top-[0.6rem] left-[2rem] right-[2rem] py-[1.4rem] rounded-full bg-[#0a0e13]/50 backdrop-blur-2xl  shadow-2xl   shadow-[#111720] `}
       >
         <div className={`flex flex-wrap leading-[0.9] w-full`}>
           <span
@@ -62,10 +65,10 @@ const Navbar = (props) => {
         >
           <img className={`w-[2rem]`} src={toggle ? close : menu} alt="" />
         </div>
-
         {/* -----------------------------Mobile Navbar---------------------------------------- */}
         {toggle && (
-          <div
+          <div 
+            data-aos="zoom-out-up"
             className={`bg-[#1b2533] md:hidden  ${styles.flexCenter} justify-start items-start w-screen min-h-screen fixed -top-[0.6rem] -left-[2rem] z-[40]`}
           >
             <div className={`relative  `}>

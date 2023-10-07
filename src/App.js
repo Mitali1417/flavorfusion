@@ -14,6 +14,15 @@ import AreaList from "./components/food/Area/AreaList";
 import AreaSearch from "./components/food/Area/AreaSearch";
 import MealSearch from "./components/food/MealSearch";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
+AOS.init({
+  duration: 1000,
+  offset: 100,
+});
+
 const App = () => {
   const [currentForm, setCurrentForm] = useState("login");
   const [key, setKey] = useState(0);

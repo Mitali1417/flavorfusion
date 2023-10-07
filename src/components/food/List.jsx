@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { styles } from "../../styles";
-import Marquee from "react-fast-marquee";
 
 const List = () => {
   const [data, setData] = useState(null);
@@ -38,9 +37,8 @@ const List = () => {
         <div
           className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} flex-col  w-full`}
         >
-          {/* <Marquee autoFill="true" speed="180" className={`${styles.flexCenter}`}>
-           */}
           <div
+            data-aos="zoom-out-up"
             className={` ${styles.paddingY} ${styles.flexCenter} text-center`}
           >
             <h2 className={`${styles.heading2} font-Roboto`}>
@@ -50,11 +48,13 @@ const List = () => {
               </span>
             </h2>
           </div>
+          {/* <div className={`animate2`} /> */}
           <div className={`${styles.flexCenter} relative flex-wrap`}>
             {data?.categories
               ?.filter((category) => category.idCategory < 6)
               .map((category, index) => (
                 <div
+                  data-aos="zoom-out-up"
                   key={index}
                   className={`flex hover:scale-90  hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start items-center overflow-hidden relative z-[2] backdrop-blur-3xl  hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] sm:max-w-[40%] md:max-w-[30%] p-9 m-5`}
                 >
@@ -93,7 +93,6 @@ const List = () => {
               className={` absolute bottom-[35rem] right-[14rem] z-[0] w-[12rem] h-[9rem] blur-3xl bg-[#556173] rotate-[25deg]`}
             />
           </div>
-          {/* </Marquee> */}
         </div>
       )}
     </>

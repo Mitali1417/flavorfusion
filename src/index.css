@@ -1,20 +1,17 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:wght@800;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,700;8..144,800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:wght@800;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,700;8..144,800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-size: 62.5%;
 }
-
 
 .bg {
   fill: none;
   stroke-width: 30px;
-  stroke: #1A2C34;
+  stroke: #1a2c34;
 }
 .meter {
   fill: none;
@@ -28,21 +25,17 @@ body{
   animation: progress-1 1s ease-out;
 }
 @keyframes progress-1 {
-    from {
-        stroke-dashoffset: 360;
-    }
-    to {
-        stroke-dashoffset: 100;
-    }
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
 }
-
-
-
-
 
 /* ------------------------------------------------------- */
 
-.loader{
+.loader {
   display: block;
   position: relative;
   height: 12px;
@@ -51,26 +44,22 @@ body{
   border-radius: 10px;
   overflow: hidden;
 }
-.loader:after{
-  content: '';
+.loader:after {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 0;
-  background: #FF3D00;
+  background: #ff3d00;
   animation: 6s prog ease-in infinite;
 }
 
 @keyframes prog {
-  to  {   width: 100%;}
+  to {
+    width: 100%;
+  }
 }
-
-
-
-
-
-
 
 .loader {
   width: 64px;
@@ -80,7 +69,7 @@ body{
   animation: rotate 1.5s ease-in infinite alternate;
 }
 .loader::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -91,22 +80,21 @@ body{
   border-radius: 0 0 50px 50px;
 }
 .loader::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 10%;
-  background: #FFF;
+  background: #fff;
   width: 8px;
   height: 64px;
   animation: rotate 1.2s linear infinite alternate-reverse;
 }
 
 @keyframes rotate {
-  100% { transform: rotate(360deg)}
+  100% {
+    transform: rotate(360deg);
+  }
 }
-      
-
-
 
 /* 
 
@@ -157,43 +145,64 @@ body{
   }
 }  */
 
-
-
-
-
 /* --------------------------------------------------- */
 
-.hoverbg{
+.hoverbg {
   box-shadow: 0px 1px 3px gray inset;
 }
 
-body::-webkit-scrollbar{
-  background-color: #2A3950;
+body::-webkit-scrollbar {
+  background-color: #2a3950;
   /* background: transparent; */
 }
 body::-webkit-scrollbar-thumb {
-  background: #cccccc; 
-    border-radius:10px;
+  background: #cccccc;
+  border-radius: 10px;
 }
-.scrollBar::-webkit-scrollbar{
+.scrollBar::-webkit-scrollbar {
   background: transparent;
 }
 
-  .scrollBar::-webkit-scrollbar-thumb {
-  background: #cccccc; 
-    border-radius:10px;
+.scrollBar::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
 }
 
-
-.bg1{
+.bg1 {
   background-image: url("./assets/bg1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
+  object-fit: contain;
 }
-.contactbg{
+.contactbg {
   background-image: url("./assets/contactbg3.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.animate2 {
+  content: "";
+  width: 4rem;
+  height: 1rem;
+  background-color: #cccccc;
+  animation: slide 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  transition: all 0.9s ease-in-out;
+}
+
+@keyframes slide {
+  100% {
+    width: 3rem;
+    height: 3rem;
+    rotate: 45deg;
+  }
+
+
+  100% {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 30rem;
+  }
 }

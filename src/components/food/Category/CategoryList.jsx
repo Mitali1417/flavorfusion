@@ -52,6 +52,7 @@ const CategoryList = () => {
           className={`${styles.boxWidth}  h-full min-h-screen flex flex-col md:flex-row w-full`}
         >
           <div
+            data-aos="slide-right"
             className={`scrollBar  w-[20rem] hidden md:flex flex-row md:flex-col max-w-screen-2xl md:min-h-screen bg-[#192230] p-[2rem] md:overflow-y-scroll fixed left-0 `}
           >
             {data?.meals?.map((category, index) => (
@@ -78,7 +79,7 @@ const CategoryList = () => {
 
           {/* Mobile & Tablet view of side scrollbar */}
           <div className={`md:hidden w-full`}>
-            <div className="relative text-left">
+            <div data-aos="fade-down" className="relative text-left">
               <button
                 onClick={() => setDisplay(!display)} // Toggle the visibility of the dropdown
                 id="dropdown-trigger"
@@ -108,6 +109,7 @@ const CategoryList = () => {
               </button>
               {display && (
                 <div
+                  data-aos="fade-up"
                   id="dropdown-menu"
                   className="z-50  bg-[#1b2533] text-white w-full divide-y divide-[#222e40] rounded-lg shadow-lg absolute"
                   aria-labelledby="dropdown-trigger"
@@ -115,7 +117,7 @@ const CategoryList = () => {
                   {data?.meals?.map((category, index) => (
                     <ul
                       key={index}
-                      className="py-2 hover:bg-[#222e40] transition duration-500 ease-in-out "
+                      className="py-2 hover:bg-[#111720] transition duration-500 ease-in-out "
                     >
                       <li className={`px-4 py-2`}>
                         <a

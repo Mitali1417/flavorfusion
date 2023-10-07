@@ -31,7 +31,8 @@ const CategorySearch = ({ category }) => {
     );
 
   return (
-    <div className={`${styles.flexCenter} flex-col px-[2rem] md:mt-[0rem]`}>
+    <div 
+     className={`${styles.flexCenter} flex-col px-[2rem] md:mt-[0rem]`}>
       <div className={`${styles.flexCenter} my-[2rem]`}>
         <h2 className={`${styles.heading2} text-center md:text-left`}>
           {category} Meals
@@ -45,7 +46,7 @@ const CategorySearch = ({ category }) => {
             key={index}
             className={`w-full ss:w-[70%] sm:w-[40%] md:w-[30%] m-[0.5rem]  md:m-[1rem]`}
           >
-            <div
+            <div  data-aos="fade-up"
               className={`relative overflow-hidden rounded-2xl hover:scale-90  hover:skew-x-2  transition duration-[900ms] ease-in-out `}
             >
               <div className={``}>

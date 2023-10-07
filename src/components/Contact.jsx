@@ -57,7 +57,10 @@ const Contact = () => {
       <div
         className={`relative w-full z-[2] ${styles.flexCenter} -bottom-[6rem]`}
       >
-        <h2 className={`absolute ${styles.heading2} drop-shadow-2xl`}>
+        <h2
+          data-aos="zoom-in"
+          className={`absolute ${styles.heading2} drop-shadow-2xl`}
+        >
           Get in Touch
         </h2>
       </div>
@@ -67,7 +70,8 @@ const Contact = () => {
         <div
           className={`contactbg w-full ${styles.paddingX} ${styles.paddingY} py-[5rem] ${styles.flexCenter} flex-col`}
         >
-          <div
+          <div 
+              data-aos="fade-up"
             className={`w-full sm:w-[70%] md:w-[50%] ${styles.paddingX}  ${styles.paddingY} rounded-[1.4rem] backdrop-blur-3xl shadow-2xl`}
           >
             <form action="POST">
