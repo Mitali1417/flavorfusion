@@ -70,7 +70,7 @@ const Signup = (props) => {
           <div className="bg-gradient-to-bl blur-lg  from-shade1 to-shade4 h-[10rem] sm:h-[12rem] w-[10rem] sm:w-[12rem] absolute rounded-full" />
         </div>
 
-        <form
+        <form data-aos="zoom-out"
           method="POST"
           className={`p-[3rem] sm:px-[5rem] flex flex-col text-center w-full max-w-[28rem]  backdrop-blur-md ${styles.text} shadow-2xl rounded-[2rem]`}
         >
