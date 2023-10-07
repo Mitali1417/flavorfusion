@@ -76,7 +76,7 @@ const AreaList = () => {
 
           {/* Mobile & Tablet view of side scrollbar */}
           <div className={`md:hidden w-full`}>
-            <div data-aos="fade-down" className="relative text-left">
+            <div data-aos="fade-down" className="relative  z-50 text-left">
               <button
                 onClick={() => setDisplay(!display)} // Toggle the visibility of the dropdown
                 id="dropdown-trigger"
@@ -108,7 +108,7 @@ const AreaList = () => {
                 <div
                   data-aos="fade-up"
                   id="dropdown-menu"
-                  className="z-50  bg-[#1b2533] max-h-screen overflow-y-scroll text-white w-full divide-y divide-[#111720] rounded-lg shadow-lg absolute"
+                  className="z-50 fixed  bg-[#1b2533] max-h-screen overflow-y-scroll text-white w-full divide-y divide-[#111720] rounded-lg shadow-lg"
                   aria-labelledby="dropdown-trigger"
                 >
                   {data?.meals?.map((area, index) => (

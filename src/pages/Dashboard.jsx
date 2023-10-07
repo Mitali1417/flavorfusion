@@ -45,10 +45,10 @@ const Dashboard = (props) => {
             <Navbar onLogout={handleLogout} />
 
             <div
-              className={`flex justify-center items-center ${styles.paddingY} flex-col md:flex-row mb-[17rem] ss:mb-[20rem] sm:mb-[26rem] md:mb-[10rem] mt-[12rem] md:mt-[20em]`}
+              className={`flex justify-center items-center ${styles.paddingY} flex-col md:flex-row mb-[17rem] ss:mb-[20rem] sm:mb-[26rem] md:mb-[10rem] mt-[7rem] md:mt-[20em]`}
             >
               <div
-                className={`w-full ${styles.flexCenter} top-[26rem] sm:top-[22rem] md:top-0  md:-left-[4rem] mx-auto relative`}
+                className={`w-full ${styles.flexCenter} top-[23rem] sm:top-[22rem] md:top-0  md:-left-[4rem] mx-auto relative`}
               >
                 <div className={`mx-auto`}>
                   <img
@@ -107,10 +107,10 @@ const Dashboard = (props) => {
               className={`w-full  ${styles.paddingX}`}
             >
               <div
-                className={`${styles.marginY} mt-[18rem] ss:mt-[20rem] sm:mt-[15rem] md:mt-[4rem] bg1 w-full shadow-2xl h-[44vh] md:h-[60vh] relative overflow-hidden rounded-[4rem] md:rounded-[6rem] rounded-tr-[0] md:rounded-tr-[0]`}
+                className={`${styles.marginY} mt-[12rem] ss:mt-[15rem] sm:mt-[10rem] md:mt-[4rem] bg1 w-full shadow-2xl h-[44vh] md:h-[60vh] relative overflow-hidden rounded-[4rem] md:rounded-[6rem] rounded-tr-[0] md:rounded-tr-[0]`}
               >
                 <div
-                  className={`absolute md:w-[75%]  bottom-[2rem] md:bottom-[7rem] z-[5] px-[3rem] sm:px-[5rem]`}
+                  className={`absolute md:w-[75%]  bottom-[2rem] md:bottom-[7rem] z-[5] px-[2rem] sm:px-[5rem]`}
                 >
                   <h1 className={`${styles.heading22} `}>
                     Explore This Banquet of Tempting Meals

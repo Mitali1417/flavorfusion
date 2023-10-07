@@ -4,8 +4,7 @@ import { styles } from "../styles";
 const Footer = () => {
   return (
     <>
-      <div 
-      data-aos="slide-up"
+      <div
         className={`${styles.flexCenter} py-[1.5rem] my-0 bg-[#2d3642] rounded-t-[4rem] w-full`}
       >
         <div
