@@ -38,7 +38,7 @@ const RandomMeal = () => {
               key={index}
               className={`${styles.flexCenter} flex-col md:flex-row  items-center`}
             >
-              <div data-aos="slide-right" className={`md:basis-[50%]`}>
+              <div data-aos="fade-right" className={`md:basis-[50%]`}>
                 <h4 className={`${styles.heading3}`}>{meal.strCategory}</h4>
                 <h2 className={`${styles.heading22}`}>{meal.strMeal}</h2>
                 <p className={`${styles.text2}`}>Pouplar in {meal.strArea}</p>
@@ -47,7 +47,7 @@ const RandomMeal = () => {
                 </p>
               </div>
               <div
-                data-aos="slide-left"
+                data-aos="fade-left"
                 data-aos-duration="1000"
                 className={`md:basis-[40%] ss:w-[20rem] md:w-full py-[2rem] ml-4`}
               >

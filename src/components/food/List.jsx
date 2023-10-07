@@ -48,30 +48,29 @@ const List = () => {
               </span>
             </h2>
           </div>
-          {/* <div className={`animate2`} /> */}
-          <div className={`${styles.flexCenter} relative flex-wrap`}>
+          <div
+            data-aos="zoom-out-up" className={`${styles.flexCenter} relative flex-wrap`}>
             {data?.categories
               ?.filter((category) => category.idCategory < 6)
               .map((category, index) => (
                 <div
-                  data-aos="zoom-out-up"
                   key={index}
-                  className={`flex hover:scale-90  hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start items-center overflow-hidden relative z-[2] backdrop-blur-3xl  hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] sm:max-w-[40%] md:max-w-[30%] p-9 m-5`}
+                  className={`flex hover:scale-90  hover:skew-x-2  transition duration-[900ms]  ease-in-out justify-start  items-center overflow-hidden relative z-[2] backdrop-blur-3xl  hover:bg-[#545679] hover:bg-gradient-to-tr hover:from-shade1 hover:to-[#212235] flex-col rounded-xl w-full h-[24rem] sm:max-w-[40%] md:max-w-[30%] p-9 m-5`}
                 >
-                  <div
-                    className={`w-[40rem] h-[9rem] blur-3xl z-0 absolute -top-[5rem]  bg-[#2e2f4a] `}
-                  />
-                  <p className={`${styles.heading3} absolute`}>
-                    {category.strCategory}
-                  </p>
-                  <img
-                    src={category.strCategoryThumb}
-                    className={`rounded-full h-[8rem] mt-[4rem] my-[2rem]`}
-                    alt={`Image for ${category.strCategory}`}
-                  />
-                  <p className={`${styles.text2}`}>
-                    {category.strCategoryDescription.slice(0, 100) + "..."}
-                  </p>
+                    <div
+                      className={`w-[40rem] h-[9rem] blur-3xl z-0 absolute -top-[5rem]  bg-[#2e2f4a] `}
+                    />
+                    <p className={`${styles.heading3} absolute`}>
+                      {category.strCategory}
+                    </p>
+                    <img
+                      src={category.strCategoryThumb}
+                      className={`rounded-full h-[8rem] mt-[4rem] my-[2rem]`}
+                      alt={`Image for ${category.strCategory}`}
+                    />
+                    <p className={`${styles.text2} `}>
+                      {category.strCategoryDescription.slice(0, 100) + "..."}
+                    </p>
                 </div>
               ))}
             <div

@@ -40,11 +40,11 @@ const AreaSearch = ({ area }) => {
         className={`flex justify-center items-center h-full min-h-fit text-white flex-wrap w-full`}
       >
         {data?.meals?.map((item, index) => (
-          <div
+          <div data-aos="fade-up"
             key={index}
             className={`w-full ss:w-[70%] sm:w-[40%] md:w-[30%] m-[0.5rem]  md:m-[1rem]`}
           >
-            <div  data-aos="fade-up"
+            <div
               className={`relative overflow-hidden rounded-2xl hover:scale-90  hover:skew-x-2  transition duration-[900ms] ease-in-out `}
             >
               <div className={``}>
