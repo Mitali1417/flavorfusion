@@ -2,6 +2,9 @@
 
 ![FlavourFusion1](https://github.com/Mitali1417/flavorfusion/assets/95479508/40e4a623-fc13-4033-9d94-c9f02f416f96)
 
+![FlavorFusion2](https://github.com/Mitali1417/flavorfusion/assets/95479508/217d3272-dc00-4817-9560-31fc0288ab1d)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
