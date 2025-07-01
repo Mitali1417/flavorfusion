@@ -1,0 +1,24 @@
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
+
+export const formatTime = (seconds: number) => {
+  const mins = Math.floor(seconds / 60)
+  const secs = seconds % 60
+  return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`
+}
+
+
+export const getEstimatedTime = (instructions: string) => {
+  const wordCount = instructions.split(" ").length
+  const estimatedMinutes = Math.max(15, Math.min(60, Math.round(wordCount / 10)))
+  return `${estimatedMinutes} min`
+}
+
+export const getRating = () => (4.2 + Math.random() * 0.6).toFixed(1)
+
