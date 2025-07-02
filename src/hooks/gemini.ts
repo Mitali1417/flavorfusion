@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 export * from '../lib/ai/gemini';
 
 export interface AIRecipeRequest {
