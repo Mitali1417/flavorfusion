@@ -29,7 +29,7 @@ export const HowItWorks = () => {
                 How It Works
             </h2>
             <div
-                className={`w-full h-full ai-bg py-6 md:py-10 rounded-b-[2rem] md:rounded-b-[4rem] overflow-hidden neo-shadow my-[6rem] `}
+                className={`ai-bg w-full h-full ai-bg py-6 md:py-10 rounded-b-[2rem] md:rounded-b-[4rem] overflow-hidden neo-shadow my-[6rem] `}
             >
                 <div
                     className={`py-6 md:py-20 px-8 w-full h-full flex flex-col`}

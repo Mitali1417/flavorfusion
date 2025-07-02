@@ -267,7 +267,7 @@ h6 {
   object-fit: contain;
   height: min(100vh, 35rem);
 }
-.contactbg {
+.ai-bg {
   background-image: url("./assets/contactbg3.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
