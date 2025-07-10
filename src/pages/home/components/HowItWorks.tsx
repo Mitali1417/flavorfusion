@@ -21,7 +21,7 @@ export const HowItWorks = () => {
       ];
     
     return (
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full select-none">
             <span className={`absolute w-full h-[50%] z-0 bg-gradient-to-b from-black/70 to-transparent`} />
             <h2
                 className={`absolute drop-shadow-2xl -mt-6 ml-8`}

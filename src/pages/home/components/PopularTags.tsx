@@ -16,7 +16,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-rose-500 to-pink-500",
       description: "Delicious chicken recipes",
       gradient: "from-amber-900 to-card",
-      image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg"
+      image: "/p1.webp"
 
     },
     {
@@ -26,7 +26,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-green-500 to-teal-500",
       description: "Plant-based goodness",
       gradient: "from-card to-amber-900",
-      image: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg"
+      image: "/p2.webp"
 
     },
     {
@@ -36,7 +36,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-amber-500 to-orange-500",
       description: "Warm & comforting soups",
       gradient: "from-amber-900 to-card",
-      image: "https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg"
+      image: "/p3.webp"
 
     },
     {
@@ -46,13 +46,13 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-purple-500 to-indigo-500",
       description: "Italian pasta dishes",
       gradient: "from-card to-amber-900",
-      image: "https://images.pexels.com/photos/1256875/pexels-photo-1256875.jpeg"
+      image: "/p4.webp"
 
     },
   ]
 
   return (
-    <div className="w-full mt-12">
+    <div className="w-full mt-12 select-nonea">
       <div>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
           Popular Searches
@@ -80,6 +80,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
                 <img
                   src={tag.image}
                   alt={tag.name}
+                  loading="lazy"
                   className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className={`absolute shadow-neo inset-0 bg-gradient-to-t ${tag.gradient} opacity-80 group-hover:opacity-90 transition-opacity duration-500`}></div>

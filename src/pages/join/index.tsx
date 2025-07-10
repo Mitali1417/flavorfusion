@@ -14,7 +14,7 @@ export default function JoinPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row overflow-x-hidden overflow-y-auto h-full">
+    <div className="min-h-screen flex flex-col lg:flex-row overflow-x-hidden overflow-y-auto h-full select-none">
       <div className="flex lg:flex-1 flex-row-reverse gap-4 lg:flex-col items-center justify-center p-8 text-center bg-primary-foreground">
         <div className="text-left lg:text-center">
           <h1>Flavor Fusion</h1>

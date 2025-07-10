@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function AuthLayout() {
   return (
-    <div className="min-h-screen flex flex-col overflow-hidden">
+    <div className="min-h-screen flex flex-col overflow-hidden select-none">
       <div className='flex'>
       <div className="hidden md:flex flex-1 flex-col items-center justify-center p-8 text-center bg-primary-foreground">
         <h1 className="text-4xl font-extrabold text-brand mb-4">Flavor Fusion</h1>

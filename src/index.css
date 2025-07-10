@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* @custom-variant dark (&:is(.dark *)); */
 
 :root {
-  --lobester: 'Lobster Two', cursive;
-  --open-sans: 'Open Sans', sans-serif;
-  --playfair-display: 'Playfair Display', serif;
-  --inter: 'Inter', sans-serif;
-  --nunito: 'Nunito', sans-serif;
+  --lobester: "Lobster Two", cursive;
+  --open-sans: "Open Sans", sans-serif;
+  --playfair-display: "Playfair Display", serif;
+  --inter: "Inter", sans-serif;
+  --nunito: "Nunito", sans-serif;
   --background: oklch(8% 0.01 140); /* #131512 */
   --foreground: oklch(94.5% 0.01 90); /* #E7E8E2 */
 
@@ -59,7 +59,6 @@
   --sidebar-border: oklch(20% 0.03 140);
   --sidebar-ring: oklch(78% 0.21 70);
   --radius: 0.625rem;
-
 }
 
 @theme inline {
@@ -259,8 +258,25 @@ h6 {
   color: #666;
 }
 
+.hero-parallax-wrapper {
+  position: relative;
+  height: min(100vh, 35rem);
+  overflow: hidden;
+}
+.parallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
 .bg1 {
-  background-image: url("./assets/bg1.jpg");
+  background-image: url("./bg1.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -268,11 +284,18 @@ h6 {
   height: min(100vh, 35rem);
 }
 .ai-bg {
-  background-image: url("./assets/contactbg3.jpg");
+  background-image: url("/ai-bg.webp");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 
-
-
+img {
+  will-change: transform;
+  transform: translateZ(0);
+  contain: layout paint;
+  user-select: none;
+  /* display: block; */
+  /* max-width: 100%; */
+  /* height: auto; */
+}
