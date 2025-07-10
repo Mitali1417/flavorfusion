@@ -9,9 +9,9 @@ export const AISection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-y-4">
           <div className="flex flex-row lg:flex-col items-center justify-center space-y-8">
             <div className="lg:mb-6">
-              <h2 className="max-w-xs">
+              <h2 className="max-w-xs leading-tight">
                 Craving
-                <span className="text-3xl md:text-4xl bg-gradient-to-r from-rose-500 to-orange-500 bg-clip-text text-transparent">
+                <span className="text-3xl md:text-4xl !leading-tight bg-gradient-to-r from-rose-500 to-orange-500 bg-clip-text text-transparent">
                   {""} Something {""}
                 </span>
                 New?
@@ -21,7 +21,7 @@ export const AISection = () => {
               className={`w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 drop-shadow-2xl ml-4`}
             >
               <img
-                src="/c1.webp"
+                src="https://images.pexels.com/photos/18574192/pexels-photo-18574192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=480&w=480"
                 loading="lazy"
                 className={`rounded-full h-full w-full object-cover shadow-2xl`}
                 alt="ai-image"

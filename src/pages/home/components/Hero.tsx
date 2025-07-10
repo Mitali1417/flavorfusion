@@ -8,7 +8,7 @@ export const Hero = () => {
       <div
         className={`hero-parallax-wrapper shadow-neo w-full shadow-2xl relative overflow-hidden rounded-xl md:rounded-[6rem] rounded-tr-[0] md:rounded-tr-[0]`}
       >
-        <ParallexBg imgSrc="/bg1.webp" />
+        <ParallexBg imgSrc="https://cdn.pixabay.com/photo/2022/02/10/05/45/lantern-7004643_1280.jpg" />
 
         <div
           className={`absolute md:w-[75%] bottom-[2rem] md:bottom-[7rem] z-[5] px-4 sm:px-10`}

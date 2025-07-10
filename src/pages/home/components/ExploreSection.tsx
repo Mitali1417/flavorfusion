@@ -40,7 +40,7 @@ export const ExploreSection = () => {
               <div className="relative bg-secondary/20 backdrop-blur-xl rounded-3xl p-6 shadow-2xl group-hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
                 <div className="relative overflow-hidden rounded-2xl">
                   <img
-                    src="/b1.webp"
+                    src="https://cdn.pixabay.com/photo/2020/06/02/18/10/noodles-5252012_1280.jpg"
                     loading="lazy"
                     alt="Delicious Recipe"
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
@@ -52,12 +52,12 @@ export const ExploreSection = () => {
                 </div>
                 <div className="absolute -bottom-8 -left-8 bg-card rounded-2xl p-6 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
                   <div className="flex items-center space-x-4">
-                    <div className="relative">
+                    <div className="relative h-16 w-16">
                       <img
-                        src="/b2.webp"
+                        src="https://images.pexels.com/photos/17597409/pexels-photo-17597409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=180&w=180"
                         alt="Recipe"
                         loading="lazy"
-                        className="w-16 h-16 rounded-xl object-cover"
+                        className="rounded-xl aspect-square object-cover"
                       />
                       <div className="absolute -top-2 -right-2 bg-gradient-to-r from-rose-500 to-orange-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
                         NEW
@@ -82,7 +82,7 @@ export const ExploreSection = () => {
             </div>
             <div className="absolute -top-12 -right-12 w-36 h-max bg-card rounded-3xl shadow-2xl p-4 rotate-12 hover:rotate-6 transition-all duration-500 hover:scale-110 group">
               <img
-                src="/b3.webp"
+                src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=270&w=270"
                 alt="Recipe 2"
                 loading="lazy"
                 className="w-full h-20 object-cover rounded-2xl mb-2"

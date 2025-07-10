@@ -16,7 +16,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-rose-500 to-pink-500",
       description: "Delicious chicken recipes",
       gradient: "from-amber-900 to-card",
-      image: "/p1.webp"
+      image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=240"
 
     },
     {
@@ -26,7 +26,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-green-500 to-teal-500",
       description: "Plant-based goodness",
       gradient: "from-card to-amber-900",
-      image: "/p2.webp"
+      image: "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=240"
 
     },
     {
@@ -36,7 +36,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-amber-500 to-orange-500",
       description: "Warm & comforting soups",
       gradient: "from-amber-900 to-card",
-      image: "/p3.webp"
+      image: "https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=240"
 
     },
     {
@@ -46,7 +46,7 @@ export const PopularTags = ({ onTagClick }: PopularTagsProps) => {
       color: "from-purple-500 to-indigo-500",
       description: "Italian pasta dishes",
       gradient: "from-card to-amber-900",
-      image: "/p4.webp"
+      image: "https://images.pexels.com/photos/1256875/pexels-photo-1256875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=240&w=240"
 
     },
   ]
